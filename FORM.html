@@ -8,21 +8,23 @@
 <body>
     <h1>FORM</h1>
     <form method="post" action="https://dev.fare4z.com" enctype="multipart/form-data"> 
-
+<p>
     <label for="Name"> FULL NAME :</label>
     <input type="text" id="NAME" name="NAME" placeholder="ENTER YOUR NAME">
 
+    <input type="hidden" name="level" value="Student"> 
+</p>
 
     <p>
         <label for="email"> EMAIL:</label>
-        <input type="email" id="email" name="email" placeholder="Enter UR email">
+        <input type="email" id="email" name="email" placeholder="Enter UR email" required>
 
     </p>
     
     <p>
         <label for="pass"> PASSWORD :</label>
-        <input type="password" id="KATA LALUAN" name="KATA LALUAN" placeholder="Enter UR PASSWORD">
-
+        <input type="password" id="KATA LALUAN" name="KATA LALUAN" placeholder="Enter UR PASSWORD" disabled>
+        
     </p>
     <p>
         <label for="dob">DATE OF BIRTH</label>
