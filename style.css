@@ -1,24 +1,22 @@
 
 body{
-background-color:cornsilk;
-background: url(website.png);
-background-size: cover;
-background-repeat:no-repeat ;
+background-color:#FF9966;
+
 
 }
 
 
 h2 {
-    color: red;
+    color: black;
     font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
     }
 
-    h2.tengah{
+    h2.mid{
         text-align: center;
         
-        }
+    }
         
 .utama{
 text-align: center;
@@ -48,15 +46,15 @@ padding: 10px 5px 5px 10px ;
 }
 .container .box p{
 
-background-color: chartreuse;
 margin: 20px 15px 15px 20px;
-border-color: black;
+
+border-color: black solid black;
 
 
 }
 .container{
 background-color: antiquewhite;
-
+margin: 5px 4px 4px 5px;
 
 }
 .toUppercase{
@@ -92,7 +90,7 @@ background-color:cornsilk;
 
 p::first-letter{
 font-size: 2em;
-color: blue;
-padding:5px;
+color: black;
+padding:2px;
 
 }
