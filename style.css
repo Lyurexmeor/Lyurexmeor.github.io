@@ -1,7 +1,9 @@
 
 body{
-background-color:#FF9966;
-
+background: url(back_websites.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
 
 }
 
