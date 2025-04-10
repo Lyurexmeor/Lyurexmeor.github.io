@@ -10,6 +10,25 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Mysite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown"> <!-- Dropdown starts here -->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                      About me
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">About me</a></li>
+                      <li><a class="dropdown-item" href="#">Location</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
         </div>
     </nav>
     <div class="container mt-4">
@@ -19,14 +38,14 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="card">
-                    <img src="meor.png" class="card-img-top" alt="Student Image">
+                <div class="card" style="width: 18rem;">
+                    <img src="New_mimi_photo.jpg" class="card-img-top" alt="Student Image">
                     <div class="card-body">
-                        <h5 class="card-title">Meor Azfar Syamim Bin Meor Zalehuddin </h5>
-                        <p class="card-text "> <b>Matric Number :10DIT23F2013<br>
+                        <h5 class="card-title">Fatin Nur Syamimi Binti Alias</h5>
+                        <p class="card-text "> <b>Matric Number :10DIT23F2011<br>
                             Course : Diploma Information of Technology
                         </b></p>
-                        <a href="#" class="btn btn-primary">Read More....</a>
+                        <a href="#" class="btn btn-secondary">Read More</a>
                     </div>
                 </div>   
             </div>
@@ -64,11 +83,12 @@
                 <input type="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#navbarNavDropdown">
+                Done
+              </button>
+              
         </form>
     </div>
     </div>
-    
-
-    
 </body>
 </html>

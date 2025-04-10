@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Bootstrap</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mysite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown"> <!-- Dropdown starts here -->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                      About me
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">About me</a></li>
+                      <li><a class="dropdown-item" href="#">Location</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="jumbotron bg-light p-4">
+            <h1 class="display-4">Welcome to My Bootstrap Page</h1>
+            <p class="lead">This is a simple demonstration of Bootstrap components.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="New_mimi_photo.jpg" class="card-img-top" alt="Student Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Fatin Nur Syamimi Binti Alias</h5>
+                        <p class="card-text "> <b>Matric Number :10DIT23F2011<br>
+                            Course : Diploma Information of Technology
+                        </b></p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>Web Design</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>Mobile App Development</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#navbarNavDropdown">
+                Open
+              </button>
+              
+        </form>
+    </div>
+    </div>
+</body>
+</html>
