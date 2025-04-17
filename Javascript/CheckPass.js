@@ -11,10 +11,15 @@ function checkPass(){
 
 }
 
+let attempt =0;
+
 function checkPass1(){
 
     let password = prompt("Please Enter your Password");
-    
+    if(attempt >=3){
+        console.log("attempt reach the limit");
+        return false;
+    }
     //Condition Nested if
     if(Number(password)){
         if(password.length >= 10){
@@ -22,6 +27,7 @@ function checkPass1(){
         console.log("Strong Password");
     }else{
         console.log("Weak Password");
+        attempt +=1;
         checkPass1();
         
     }}else{
