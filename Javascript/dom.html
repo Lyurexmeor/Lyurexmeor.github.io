@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+
+</head>
+<body>
+    <div id="content" style="width: 500px;height:500px;border:5px;border-style:dotted;">
+        <h1>
+            <span id="displayName"></span>
+            <span id="hello"></span>
+        </h1>
+   
+    </div>
+    <button id="changeBlue" onmouseover="changeBlue()">Change Blue</button>
+    <button id="changeYellow" onmouseover="changeYellow()">Change Yellow</button>
+    <br>
+    <input type="text" id="fullname" placeholder="Enter Ur FullName">
+    <button onclick="btnSubmit()">Submit</button>
+    
+
+<div id="info">
+    
+    
+</div>
+<script>
+    function changeBlue(){
+    let content = document.getElementById("content");
+    content.style.background="darkblue";
+    content.style.color="white";
+    content.style.filter="blur(0px)";
+    
+}
+
+function changeYellow(){
+    let content = document.getElementById("content");
+    content.style.background="Yellow";
+    content.style.color="black";
+    content.style.filter="blur(3px)";
+    
+}
+
+function btnSubmit(){
+
+    let info =document.getElementById("info");
+    let fullName = document.getElementById("fullname").value;
+
+    info.innerHTML= "Hello "+ fullName;
+
+    let displayName =document.getElementById("displayName");
+    displayName.innerText=fullName;
+}
+
+let Hello =document.getElementById("Hello");
+hello.onmouseover= function(){
+
+    hello.innerText ="Hai ,Name Babe";
+    hello.style.color="red";
+
+
+}
+
+hello.onmouseover = function(){
+    hello.innerText ="Hai ,Name Meor";
+    hello.style.color="blue";
+
+
+
+}
+
+</script>
+</body>
+</html>
